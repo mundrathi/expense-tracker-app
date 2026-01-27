@@ -1,0 +1,4 @@
+# Minimal dependencies - Basic Python Expense Tracker
+# No pandas, no graph APIs - just Streamlit for dashboard
+
+streamlit==1.53.1
