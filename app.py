@@ -1,6 +1,6 @@
 """
 Household Expense Tracker - Khatabook Style
-Using Basic Python (No Pandas, No Graph APIs)
+Using Basic Python (No Pandas, No Graph API'.)
 Built with: Loops, Dictionaries, Lists, File Handling + Streamlit Dashboard
 """
 
