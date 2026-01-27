@@ -7,7 +7,9 @@ Built with: Loops, Dictionaries, Lists, File Handling + Streamlit Dashboard
 import streamlit as st
 import json
 import os
+import time
 from datetime import datetime, timedelta
+
 
 # ============================================================================
 # CONFIGURATION
@@ -18,6 +20,7 @@ st.set_page_config(
     page_icon="💰",
     layout="wide"
 )
+
 
 # Data file path
 DATA_FILE = "expenses_data.json"
@@ -61,9 +64,11 @@ def save_expenses(expenses_list):
 
 
 def add_expense(expenses_list, date, category, subcategory, description, amount, payment_mode):
+    # Generate unique ID using timestamp
+    unique_id = int(time.time() * 1000)  # Milliseconds since epoch
     """Add new expense to list using dictionary"""
     new_expense = {
-        'id': len(expenses_list) + 1,
+        'id': unique_id,
         'date': date,
         'category': category,
         'subcategory': subcategory,
@@ -668,7 +673,7 @@ elif page == "📋 View Expenses":
         st.markdown("---")
         
         # Table rows
-        for expense in display_expenses:
+        for i, expense in enumerate(display_expenses):
             col1, col2, col3, col4, col5, col6, col7 = st.columns([1.5, 2, 2, 2, 1.5, 1.5, 1])
             col1.write(expense['date'])
             col2.write(expense['category'])
