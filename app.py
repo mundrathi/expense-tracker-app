@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 # ============================================================================
 
 st.set_page_config(
-    page_title="Ghar Ka Khata - Expense Tracker",
+    page_title="Ghar Ka Khata - Expense-Tracker",
     page_icon="💰",
     layout="wide"
 )
