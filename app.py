@@ -36,7 +36,7 @@ CATEGORIES = {
         "Rice & Grains (Chawal/Gehu)",
         "Dal & Pulses (Dal/Chana)",
         "Cooking Oil & Ghee",
-        "Spices & Masala",
+        "Spices & Masalas",
         "Flour & Atta",
         "Bread & Bakery",
         "Eggs & Meat",
